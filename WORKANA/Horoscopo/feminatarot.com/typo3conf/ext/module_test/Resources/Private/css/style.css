@@ -1,0 +1,38 @@
+.csc-firstHeader, .csc-header h1 {
+	color: #fa1538 !important;
+}
+
+#boxQuestion1 .row *, #boxQuestion2 .row *, #boxQuestion3 .row *, #boxQuestion4 .row *, #boxQuestion5 .row *, #boxQuestion6 .row *, #boxQuestion7 .row *,
+#boxQuestion8 .row *, #boxQuestion9 .row *, #boxQuestion10 .row *, .successMessageCompatibilite ul li, label
+{
+	color: white !important;
+	text-shadow: 0 0 10px #000;
+	padding-right:15px;
+}
+
+.interne_container{
+    background-position: 0 0% !important;
+    background-size: 100% 100% !important;
+}
+/*
+@media screen and (max-width: 640px) {
+	.interne_container{
+		background-position: 60% 28% !important;
+		background-size: 650px 1300px !important;
+	}
+}
+
+
+@media screen and (max-width: 830px) {
+	.interne_container{
+		background-position: 0 35% !important;
+		background-size: 100% 56% !important;
+	}
+}
+*/
+
+div[id^="boxQuestion"] ul p {
+		clear: both;
+		display: block;
+		margin: 0px 0 !important;
+	}

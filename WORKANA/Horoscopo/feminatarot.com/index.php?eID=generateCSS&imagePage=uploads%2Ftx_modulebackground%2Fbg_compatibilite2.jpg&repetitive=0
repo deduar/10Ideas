@@ -1,0 +1,10 @@
+
+.interne_container {
+    background: url("uploads/tx_modulebackground/bg_compatibilite2.jpg") rgba(0, 0, 0, 0); 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -5;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;    
+}

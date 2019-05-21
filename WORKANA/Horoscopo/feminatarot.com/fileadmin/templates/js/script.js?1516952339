@@ -1,0 +1,337 @@
+/*function isValideForm() {
+    var a = !0;
+    jQuery(".errorListe").remove();
+    var b = "",
+        c = "";
+    jQuery("#viewForm input , #viewForm select , #viewForm textarea ").each(function() {
+        jQuery(this).css("border", "1px solid #cfcfcf")
+    }), jQuery("#viewForm input[class~='requiredField'], #viewForm select[class~='requiredField'], #viewForm textarea[class~='requiredField']").each(function() {
+        var d = jQuery(this).val();
+        isEmpty(d) && (jQuery(this).css("border", "red solid 1px"), console.log(erreurRequired), a && (b = b + '<span class="error">' + erreurRequired + "</span>"), a = !1)
+    });
+    var d = jQuery("input[name='genre']");
+    if (d.length && (d.is(":checked") || ("" == b && (b = b + '<span class="error">' + erreurRequired + "</span>"), $("label[for='genreH']").css("border-bottom", "1px solid red "), $("label[for='genreF']").css("border-bottom", "1px solid red "), $(".control-label").css("border-bottom", "0px solid red "), a = !1)), !a) return swal("", erreurRequired, "error"), jQuery("#viewForm").before('<div class=" content errorListe">' + b + "</div>"), window.scrollTo(0, jQuery(".errorListe").offset().top), !1;
+    jQuery("#viewForm input[class~='alphaField']").each(function() {
+        var e = jQuery(this).val();
+        if (!isAlpha(e)) {
+            jQuery(this).css("border", "red solid 1px");
+            var f = jQuery("label[for='" + jQuery(this).attr("id") + "']");
+            f = f.html(), f = f.replace(":", ""), erreurLettre1 = erreurLettre, erreurLettre1 = erreurLettre1.replace("{label}", f), b = b + '<span class="error">' + erreurLettre1 + "</span>", c = c + erreurLettre1.replace('<span class="required">*</span>', "") + "\n", a = !1
+        }
+    }), jQuery("#viewForm input[class~='numericField']").each(function() {
+        var e = jQuery(this).val();
+        if (!isNumeric(e)) {
+            jQuery(this).css("border", "red solid 1px");
+            var f = jQuery("label[for='" + jQuery(this).attr("id") + "']");
+            f = f.html(), f = f.replace(":", ""), erreurNumerique = erreurNumerique.replace("{label}", f), b = b + '<span class="error">' + erreurNumerique + "</span>", c = c + erreurNumerique.replace('<span class="required">*</span>', "") + "\n", a = !1
+        }
+    }), jQuery("#viewForm input[class~='emailField']").each(function() {
+        var e = jQuery(this).val();
+        isMailValid(e) || (jQuery(this).css("border", "red solid 1px"), b = b + '<span class="error">' + erreurEmail + "</span>", c = c + erreurEmail.replace('<span class="required">*</span>', "") + "\n", a = !1)
+    });
+    var d = jQuery("input[name='couleurListe[]']");
+    if (d.length) {
+        var e = [];
+        jQuery("input[name='couleurListe[]']:checked").each(function() {
+            e.push($(this).attr("id"))
+        }), 4 != e.length && (b = b + '<span class="error">' + erreurCouleurs + "</span>", c = c + erreurCouleurs.replace('<span class="required">*</span>', "") + "\n", a = !1)
+    }
+    var d = jQuery("input[name='choixCarte']");
+    d.length && selectedCardCount < 4 && (b = b + '<span class="error">' + erreurCartes + "</span>", c = c + erreurCartes.replace('<span class="required">*</span>', "") + "\n", a = !1);
+    var d = jQuery("input[name='confidentialite[]']");
+    d.length && (d.is(":checked") || (b = b + '<span class="error">' + erreurPolitique + "</span>", c = c + erreurPolitique.replace('<span class="required">*</span>', "") + "\n", a = !1));
+    var d = jQuery("input[name='plusque18[]']");
+    return d.length && (d.is(":checked") || (b = b + '<span class="error">' + erreurAge + "</span>", c = c + erreurAge.replace('<span class="required">*</span>', "") + "\n", a = !1)), "" != c && swal("", c, "error"), jQuery("#viewForm").before('<div class=" content errorListe">' + b + "</div>"), window.scrollTo(0, jQuery(".errorListe").offset().top), a
+}
+*/
+/*
+captchaExiste = false;
+var refreshIntervalId = setInterval(function(){
+	if(jQuery("#g-recaptcha-response").length){
+		captchaExiste = true;
+		clearInterval(refreshIntervalId);
+	}
+}, 1000);
+	
+
+setInterval(function(){
+	if(captchaExiste){
+		var recaptchaData = jQuery("#g-recaptcha-response").val();
+		trueCaptcha = false;
+		jQuery.ajax({
+			url : 'ccc.php?eID=verificationCaptcha&recaptcha='+recaptchaData,
+			success : function(data) {
+				if(data == 0){
+					console.log("captcha non");
+					trueCaptcha = false;
+				}
+				else{
+					console.log("captcha OK");
+					trueCaptcha = true;
+				}
+			}
+		});
+	}
+}, 1000);
+*/
+
+captchaExiste = false;
+trueCaptcha = false;
+
+var refreshIntervalId = setInterval(function() {
+    if (jQuery("#g-recaptcha-response").length) {
+        captchaExiste = true;
+        clearInterval(refreshIntervalId);
+    }
+}, 1000);
+
+function isValideForm(){
+	var result = true;
+	jQuery(".errorListe").remove();
+	var HTML = "";
+	var HTML_ALERT = "";
+
+	jQuery( "#viewForm input , #viewForm select , #viewForm textarea " ).each(function( index ) {
+		jQuery(this).css("border","1px solid #cfcfcf");
+	});
+	
+	//vérification des champs obligatoire
+	jQuery( "#viewForm input[class~='requiredField'], #viewForm select[class~='requiredField'], #viewForm textarea[class~='requiredField']" ).each(function( index ) {
+		var valueInput = jQuery(this).val();
+		if(isEmpty(valueInput)) {
+			jQuery(this).css("border","red solid 1px");
+			console.log(erreurRequired);
+			if(result) HTML = HTML+"<span class=\"error\">"+erreurRequired+"</span>";
+			result = false;
+		}
+	});
+	
+	//vérification sur les radio genre
+	var element = jQuery("input[name='genre']");
+	if(element.length){
+		if (!(element.is(':checked'))){
+			if (HTML == "")
+			HTML = HTML+"<span class=\"error\">"+erreurRequired+"</span>";
+			$("label[for='genreH']").css("border-bottom", "1px solid red ");
+			$("label[for='genreF']").css("border-bottom", "1px solid red ");
+			$(".control-label").css("border-bottom", "0px solid red ");
+			result = false;
+		}
+	}
+
+	if (!result) {
+		
+		swal("", erreurRequired , "error");
+		jQuery("#viewForm").before("<div class=\" content errorListe\">"+HTML+"</div>");
+		window.scrollTo(0, jQuery(".errorListe").offset().top);
+		return false;
+	}
+
+	//verification du captcha
+    if (captchaExiste) {
+    	var recaptchaResponse = jQuery("#g-recaptcha-response").val();
+    	if (recaptchaResponse == ""){
+			console.log("captcha non");
+			HTML = HTML+"<span class=\"error\">"+"Por favor, compruebe el código de imagen"+"</span>";
+			HTML_ALERT = HTML_ALERT+"Por favor, compruebe el código de imagen"+"\n";
+			result = false;    		
+    	}
+    	else{
+			jQuery.ajax({
+				url: 'ccc.php?eID=verificationCaptcha&recaptcha=' + recaptchaResponse,
+		        complete: function(data) {
+		            if (data == 0) {
+		                console.log("captcha non");
+			HTML = HTML+"<span class=\"error\">"+"Por favor, compruebe el código de imagen"+"</span>";
+			HTML_ALERT = HTML_ALERT+"Por favor, compruebe el código de imagen"+"\n";
+			            result = false;
+		            } else {
+		                console.log("captcha OK");
+		                trueCaptcha = true;
+		            }
+		        }
+		    });
+    	}
+    }	
+    /*
+	if(captchaExiste){
+		console.log(!trueCaptcha);
+		if(!trueCaptcha){
+			HTML = HTML+"<span class=\"error\">"+"Por favor, compruebe el código de imagen"+"</span>";
+			HTML_ALERT = HTML_ALERT+"Por favor, compruebe el código de imagen"+"\n";
+			result = false;
+		}
+	}
+	*/
+
+
+	//vérification des champs alphanumérique
+	jQuery( "#viewForm input[class~='alphaField']" ).each(function( index ) {
+		var valueInput = jQuery(this).val();
+		if(!isAlpha(valueInput)) {
+			jQuery(this).css("border","red solid 1px");
+			var label = jQuery("label[for='"+jQuery(this).attr('id')+"']");
+			label = label.html();
+			label = label.replace(":", ""); 
+			erreurLettre1 = erreurLettre;
+			erreurLettre1 = erreurLettre1.replace('{label}', label);
+			HTML = HTML+"<span class=\"error\">"+erreurLettre1+"</span>";
+			HTML_ALERT = HTML_ALERT+erreurLettre1.replace('<span class="required">*</span>', "")+"\n";
+			result = false;
+			
+			
+		}
+	});
+	
+	//vérification des champs numérique
+	jQuery( "#viewForm input[class~='numericField']" ).each(function( index ) {
+		var valueInput = jQuery(this).val();
+		if(!isNumeric(valueInput)) {
+			jQuery(this).css("border","red solid 1px");
+			var label = jQuery("label[for='"+jQuery(this).attr('id')+"']");
+			label = label.html();
+			label = label.replace(":", ""); 
+			erreurNumerique = erreurNumerique.replace('{label}', label);
+			HTML = HTML+"<span class=\"error\">"+erreurNumerique+"</span>";
+			HTML_ALERT = HTML_ALERT+erreurNumerique.replace('<span class="required">*</span>', "")+"\n";
+			result = false;
+		}
+	});
+
+	//vérification des champs email
+	jQuery( "#viewForm input[class~='emailField']" ).each(function( index ) {
+		var valueInput = jQuery(this).val();
+		if(!isMailValid(valueInput)) {
+			jQuery(this).css("border","red solid 1px");
+			HTML = HTML+"<span class=\"error\">"+erreurEmail+"</span>";
+			HTML_ALERT = HTML_ALERT+erreurEmail.replace('<span class="required">*</span>', "")+"\n";
+			result = false;
+		}
+	});
+	
+	//vérification sur les checkbox couleurs
+	var element = jQuery("input[name='couleurListe[]']");
+	if(element.length){
+		var selectedCheckboxColor = [];
+		jQuery("input[name='couleurListe[]']:checked").each(function() {
+			selectedCheckboxColor.push($(this).attr('id'));
+		});
+		if (selectedCheckboxColor.length != 4 ){
+			HTML = HTML+"<span class=\"error\">"+erreurCouleurs+"</span>";
+			HTML_ALERT = HTML_ALERT+erreurCouleurs.replace('<span class="required">*</span>', "")+"\n";
+			result = false;
+		}
+	}
+	
+	//vérification sur les checkbox cartes
+	var element = jQuery("input[name='choixCarte']");
+	if(element.length){
+		if (selectedCardCount<4)
+		{
+			HTML = HTML+"<span class=\"error\">"+erreurCartes+"</span>";
+			HTML_ALERT = HTML_ALERT+erreurCartes.replace('<span class="required">*</span>', "")+"\n";
+			result = false;
+		}
+	}
+	
+	//vérification sur les checkbox confidentialite
+	var element = jQuery("input[name='confidentialite[]']");
+	if(element.length){
+		if (!(element.is(':checked'))){
+			HTML = HTML+"<span class=\"error\">"+erreurPolitique+"</span>";
+			HTML_ALERT = HTML_ALERT+erreurPolitique.replace('<span class="required">*</span>', "")+"\n";
+			result = false;
+		}
+	}
+	
+	//vérification sur les checkbox plusque18
+	var element = jQuery("input[name='plusque18[]']");
+	if(element.length){
+		if (!(element.is(':checked'))){
+			HTML = HTML+"<span class=\"error\">"+erreurAge+"</span>";
+			HTML_ALERT = HTML_ALERT+erreurAge.replace('<span class="required">*</span>', "")+"\n";
+			result = false;
+		}
+	}
+
+	if (HTML_ALERT != "") swal("", HTML_ALERT , "error");
+	jQuery("#viewForm").before("<div class=\" content errorListe\">"+HTML+"</div>");
+	window.scrollTo(0, jQuery(".errorListe").offset().top);
+	return result;
+}
+
+function isEmpty(a) {
+    return "" === a.trim() || "0" === a.trim() ? !0 : !1
+}
+
+function isAlpha(a) {
+    var b = /^[a-zA-Z\xe9\xe8\xe0\xea  ]*$/;
+    return a.match(b)
+}
+
+function isNumeric(a) {
+    var b = /^[0-9]+$/;
+    return a.match(b)
+}
+
+function isMailValid(a) {
+    var b = /^[A-Za-z0-9._-]+@[A-Za-z0-9._-]{1,}[A-Za-z0-9]{1}\.[A-Za-z]{2,4}$/;
+    return a.match(b)
+}
+
+function confirmationMail() {
+    jQuery(".result_popup").html("");
+    var a = jQuery("#email").val(),
+        b = jQuery("#confirmation").val();
+    if (console.log(a), console.log(b), regex = new RegExp("^" + a + "$"), !regex.test(b)) {
+        var c = jQuery("#messageConfirmMailErreur").val();
+        return jQuery(".result_popup").html("<p>" + c + "</p>"), !1
+    }
+    jQuery(".confirmationOK").click(), closePopUp()
+}
+
+function closePopUp() {
+    removeElementsByClass("backgroundPopupMail"), removeElementsByClass("popupMail"), removeElementsByClass("popupResult")
+}
+
+function removeElementsByClass(a) {
+    for (var b = document.getElementsByClassName(a); b.length > 0;) b[0].parentNode.removeChild(b[0])
+}
+jQuery(function() {
+    $("#vous_etes_dans_l_un_de_ces_cas").length && ($("select[id=vous_etes_dans_l_un_de_ces_cas]").change(function() {
+        question = $("select[id=vous_etes_dans_l_un_de_ces_cas] option:selected").text() + "\n", $("#question").val(question)
+    }), question = $("select[id=vous_etes_dans_l_un_de_ces_cas]").val() + "\n", $("#question").keyup(function() {
+        if (0 !== $(this).val().indexOf(question)) {
+            var a = question.length + 1,
+                b = $(this).val(),
+                c = b.slice(a);
+            $(this).val(question + c)
+        }
+    })), jQuery(".confirmation").click(function() {
+        if (jQuery(".popupMail").remove(), !isValideForm()) return !1;
+        /*jQuery(this).attr("disabled", "disabled"),*/ jQuery(this).after('<div class="backgroundPopupMail"> </div>'), jQuery(this).after('<div class="popupMail"></div>');
+        var a = "",
+            b = jQuery("#messageConfirmMail").val();
+        return a = a.concat("<div class='closePopUp'  onclick='closePopUp()'></div>"), a = a.concat("<div><p>" + b + "</p></div>"), a = a.concat("<label>Confirmaci\xf3n de correo electr\xf3nico : </label>"), a = a.concat("<input type='text' id='confirmation' />"), a = a.concat("<input type='button' class='button' onclick='confirmationMail()' value='Enviar' />"), a = a.concat("<div class='result_popup'></div>"), jQuery(".popupMail").html(a), !1
+    }), jQuery("body").on("click", "button.confirm", function() {
+        $(".confirmation").removeAttr("disabled")
+    });
+    var a = jQuery("input[name='couleurListe[]']");
+    a.length && jQuery("body").on("click", "input[name='couleurListe[]']", function() {
+        var a = [];
+        jQuery("input[name='couleurListe[]']:checked").each(function() {
+            a.push($(this).attr("id")), $(this).parent().find("label").css("margin-top", "10px")
+        }), jQuery("input[name='couleurListe[]']:not(:checked)").each(function() {
+            $(this).parent().find("label").css("margin-top", "0px")
+        }), 4 == a.length && (console.log("ok"), jQuery("input[name='couleurListe[]']:not(:checked)").each(function() {
+            $(this).parent().remove()
+        }), jQuery("input[name='couleurListe[]']:checked").parent().parent().find("br").remove())
+    })
+}), $(function() {
+    $(".genereadresseEmail").each(function() {
+        var b = $(this).attr("href"),
+            c = new RegExp("^(.*)/(.*)/(.*)$", "gm"),
+            d = b.replace(c, "$1@$2.$3");
+        $(this).text(d), $(this).attr("href", "mailto:" + d)
+    })
+});

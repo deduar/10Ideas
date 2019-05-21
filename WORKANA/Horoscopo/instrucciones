@@ -1,0 +1,56 @@
+Hola Eduardo. Me parece que te hemos contratado antes de estar completamente listo de nuestro lado. 
+Lo siento si estas algo perdido.
+
+Tratando del API, aún no tengo las especificaciones y aún no sé cuales pruebas A/B queremos implementar. 
+Así, para empezar, tendrás que desarrollar un portal con las 10 páginas enviadas por e-mail. 
+Luego, integraremos el API y las pruebas A/B. De momento, puedes olvidarte todo de la landing page, 
+la verificación de acceso, ...
+
+Instrucciones:
+
+1. Vas a recibir los accesos al vps por un correo electrónico enviado por uno de nuestros técnicos. 
+El correo estará escrito en francés pero solo necesitaras recoger los accesos. 
+Podrás utilizar un traductor automático si resulta necesario.
+
+2. Desarrolla un portal con las 10 páginas y un diseño similar al de feminatarot.com. 
+No usaremos un nombre de domino de momento.
+
+3. Tras 3 horas de trabajo sobre el proyecto, mándame un mensaje con la URL del portal. 
+Así podré verificar que lo que habrá hecho corresponderá con lo que queremos, antes de seguir.
+
+Es suficientemente claro?
+
+-------------------------------------------------------
+Hola:
+
+Queremos agrupar las páginas en 6 categorías:
+
+1. Horóscopo-Astrológica
+Los Decanatos (el texto trata de implementar una heramienta; no tiene que hacerlo)
+Calcula tu Decanato
+Pequeña Guía Astrológica
+
+2. Tu Signo en Astrología
+Los signos del Zodiaco
+Características de los Signos Zodiacales
+
+3. Clarividencia
+La numerología
+
+4. Amor y Sexo
+El Punto G (el vínculo en el texto tiene que dirigir hacía la página kamasutra)
+Kamasutra
+El Papel de la Mujer
+Besos (Tipos de Besos)
+Las posiciones
+Sexo Tántrico
+
+5. Las Posiciones
+Catégoría vacía (de momento)
+
+6. En Forma
+La meditación
+La relajación
+
+Saludos,
+Alexandre

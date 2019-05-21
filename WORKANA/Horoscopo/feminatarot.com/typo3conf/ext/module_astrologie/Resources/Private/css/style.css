@@ -1,0 +1,115 @@
+.horizontal-sign-index {
+	border-top: 3px solid #333333;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.horizontal-sign-index.top {
+	margin-top: -18px;
+}
+
+.imageLeft {
+	height: 150px;
+	width: 150px;
+	float: left;
+	margin: 50px 0;
+}
+
+.horizontal-sign-index ul {
+	/*padding: 0 25px;*/
+	/* margin: 25px; */
+	margin: 5px 0;
+}
+
+.horizontal-sign-index .western-horizontal li {
+	display: inline-block;
+	height: 150px;
+	float:left;
+	width:105px;
+	/* margin: 25px; */
+}
+
+.horizontal-sign-index .western-horizontal span.icon {
+	background: url("../images/astro_symbols.png") no-repeat scroll -20px
+		-3px rgba(0, 0, 0, 0);
+	display: inline-block;
+	height: 115px;
+	padding: 0;
+	width: 115px;
+}
+
+.horizontal-sign-index .western-horizontal span.title,.horizontal-sign-index .western-horizontal span.h-sub-title
+	{
+	bottom: -70px;
+	display: block;
+	padding-right: 10px;
+	position: relative;
+	text-align: center;
+}
+
+.horizontal-sign-index .western-horizontal li h3 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #ff0000;
+	padding-top: 40px;
+}
+
+.horizontal-sign-index .western-horizontal li .top h3 {
+	padding-top: 0px;
+	font-size: medium;
+	font-weight: bold;
+}
+
+.horizontal-sign-index .western-horizontal span.h-sub-title {
+	color: #000;
+	font-size: 10px;
+}
+
+.horizontal-sign-index .western-horizontal span.logo0,.icon.logo0 {
+	background: url("../images/Belier.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo1,.icon.logo1 {
+	background: url("../images/Taureau.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo2,.icon.logo2 {
+	background: url("../images/Gemeaux.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo3,.icon.logo3 {
+	background: url("../images/Cancer.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo4,.icon.logo4 {
+	background: url("../images/Lion.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo5,.icon.logo5 {
+	background: url("../images/Vierge.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo6,.icon.logo6 {
+	background: url("../images/Balance.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo7,.icon.logo7 {
+	background: url("../images/Scorpion.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo8,.icon.logo8 {
+	background: url("../images/Sagittaire.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo9,.icon.logo9 {
+	background: url("../images/Capricorne.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo10,.icon.logo10 {
+	background: url("../images/Verseau.png") no-repeat scroll rgba(0, 0, 0, 0);
+}
+
+.horizontal-sign-index .western-horizontal span.logo11,.icon.logo11 {
+	background: url("../images/Poisson.png") no-repeat scroll rgba(0, 0, 0, 0);
+}

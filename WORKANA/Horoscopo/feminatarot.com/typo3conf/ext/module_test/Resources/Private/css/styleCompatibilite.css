@@ -1,0 +1,32 @@
+.interne_container{
+    background-position: 0 0% !important;
+    background-size: 100% 100% !important;
+}
+
+.csc-firstHeader, .csc-header h1 {
+	color: white !important;
+	text-shadow: 0 0 10px #000;
+	text-align:center;
+}
+/*
+@media screen and (max-width: 640px) {
+	.interne_container{
+		background-position: 0 35% !important;
+		background-size: 100% 59% !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.interne_container{
+		background-position: 0 35% !important;
+		background-size: 100% 56% !important;
+	}
+}
+*/ 
+
+#boxQuestion1 ul *, #boxQuestion2 ul *, #boxQuestion3 ul *, #boxQuestion4 ul *, #boxQuestion5 ul *, #boxQuestion6 ul *, #boxQuestion7 ul *,
+#boxQuestion8 ul *, #boxQuestion9 ul *, #boxQuestion10 ul *, .successMessageCompatibilite ul li, label
+{
+	color: white !important;
+	text-shadow: 0 0 10px #000;
+}

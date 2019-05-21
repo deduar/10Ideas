@@ -1,0 +1,261 @@
+
+		.imageSelectedTarot1{
+			background: url('uploads/tx_moduletarot/TAROT_1.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot2{
+			background: url('uploads/tx_moduletarot/TAROT_2.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot3{
+			background: url('uploads/tx_moduletarot/TAROT_3.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot4{
+			background: url('uploads/tx_moduletarot/TAROT_4.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot5{
+			background: url('uploads/tx_moduletarot/TAROT_5.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot6{
+			background: url('uploads/tx_moduletarot/TAROT_6.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot7{
+			background: url('uploads/tx_moduletarot/TAROT_7.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot8{
+			background: url('uploads/tx_moduletarot/TAROT_8.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot9{
+			background: url('uploads/tx_moduletarot/TAROT_9.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot10{
+			background: url('uploads/tx_moduletarot/TAROT_10.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot11{
+			background: url('uploads/tx_moduletarot/TAROT_11.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot12{
+			background: url('uploads/tx_moduletarot/TAROT_12.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot13{
+			background: url('uploads/tx_moduletarot/TAROT_13.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot14{
+			background: url('uploads/tx_moduletarot/TAROT_14.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot15{
+			background: url('uploads/tx_moduletarot/TAROT_15.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot16{
+			background: url('uploads/tx_moduletarot/TAROT_16.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot17{
+			background: url('uploads/tx_moduletarot/TAROT_17.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot18{
+			background: url('uploads/tx_moduletarot/TAROT_18.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot19{
+			background: url('uploads/tx_moduletarot/TAROT_19.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot20{
+			background: url('uploads/tx_moduletarot/TAROT_20.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot21{
+			background: url('uploads/tx_moduletarot/TAROT_21.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot22{
+			background: url('uploads/tx_moduletarot/TAROT_22.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot23{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot24{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot25{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot26{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot27{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot28{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot29{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot30{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot31{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot32{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot33{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot34{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot35{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot36{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot37{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot38{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot39{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot40{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot41{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot42{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot43{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot44{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot45{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot46{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot47{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot48{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot49{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot50{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot51{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		
+		.imageSelectedTarot52{
+			background: url('uploads/tx_moduletarot/dos-web.jpg') no-repeat scroll 0 0 / 119px 210px rgba(0, 0, 0, 0) !important;
+			background-size: 119px 210px !important;
+		}
+		

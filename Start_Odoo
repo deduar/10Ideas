@@ -1,0 +1,14 @@
+odoo 9  : /opt/odoo/server - postgres 9.4 - db odoo, user odoo, passwd odoo | admin/admin
+
+odoo 10 : /opt/odoo/odoo-10 - postgres 9.6- db odoo_10, user odoo, passwd odoo 
+	| admin-deduar@gmail.com a.MU...
+
+
+
+sudo /usr/bin/pg_ctlcluster  9.4 main start
+cd server/
+sudo python odoo.py 
+
+odoo 10
+sudo ./odoo-bin --addons-path=addons --condfi=/etc/odoo.conf
+

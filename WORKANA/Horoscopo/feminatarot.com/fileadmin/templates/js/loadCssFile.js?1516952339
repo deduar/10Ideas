@@ -1,0 +1,16 @@
+
+// loadCSS( "fileadmin/templates/css/slideshow.css" );
+// loadCSS( "fileadmin/templates/css/base.css" );
+// loadCSS( "fileadmin/templates/css/skeleton.css" );
+// loadCSS( "fileadmin/templates/css/stylesheet.css" );
+// loadCSS( "fileadmin/templates/css/dresscode.css" );
+// loadCSS( "fileadmin/templates/css/sliders_styles.css" );
+// loadCSS( "fileadmin/templates/css/layout.css" );
+// loadCSS( "fileadmin/templates/css/effects.css" );
+loadCSS( "fileadmin/templates/css/jquery-ui-1.8.16.custom.css" );
+loadCSS( "fileadmin/templates/css/colorbox.css" );
+// loadCSS( "fileadmin/templates/css/customStyle.css" );
+// loadCSS( "fileadmin/templates/css/rteStyle.css" );
+// loadCSS( "fileadmin/templates/css/demo.css" );
+// loadCSS( "fileadmin/templates/css/set1.css" );
+loadCSS( "fileadmin/templates/css/sweetalert.css" );

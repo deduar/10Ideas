@@ -1,0 +1,2 @@
+Desarrollo de aplicación web para manejo de créditos con pagos Diarios, quincenal Mensual o por acuerdo con cliente con interés variables, debe tener módulo de administración, reportes seguimientos de rutas de cobradores, debe tener aplicación celular Android para alimentar los cobros de clientes, creación de créditos y espera de aprobación de la central, manejo de documentos de clientes etc. La aplicación debe ser multi empresaria y multi usuario
+Se Dara mayor información a la propuesta que se ajuste a las necesidades. 

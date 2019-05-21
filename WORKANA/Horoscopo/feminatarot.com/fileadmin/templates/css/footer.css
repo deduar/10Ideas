@@ -1,0 +1,30 @@
+.pied_footer {
+    background: #E30F7A;
+    color: #f7f7f7 !important;
+    
+}
+
+.pied_footer a{
+    color: #f7f7f7 !important;
+}
+
+.pied_footer a,
+.pied_footer nav,
+.pied_footer ul,
+.pied_footer ul li {
+    display: inline-block;
+}
+
+.socialLinkBox{
+	margin: 10px 0;
+    padding: 15px;
+    border-top: 2px solid #f7f7f7;
+    border-bottom: 2px solid #f7f7f7;	
+}
+.socialLink{
+	margin: 10px;
+}
+
+.pinterest{
+	color: #151515 !important;
+}

@@ -1,0 +1,85 @@
+@font-face {
+    font-family: socialShareFont;
+    src: url('../fonts/typeecon/typeecon.otf');
+}
+
+.socialShareFont{
+    font-family: socialShareFont;
+    color: #f7f7f7 ;
+    font-size: 2.5em;
+}
+
+.socialLink{
+	text-decoration: none !important;
+}
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before{font-family:"entypo", sans-serif;}
+#sticky-social{left:0;position:fixed;top:150px;}
+
+#sticky-social {
+    left: 0;
+    position: fixed;
+    top: 150px;
+    background: #E30F7A;
+    border-radius: 0px 50px 50px 0px;
+    padding: 20px 0;
+    border-right: 1px solid #FFF;
+}
+
+#sticky-social ul li{
+	cursor: pointer;
+}
+
+#sticky-social a{background:#333;color:#fff;display:block;height:35px;font:16px "Open Sans", sans-serif;line-height:35px;position:relative;text-align:center;width:35px;}
+#sticky-social a span{line-height:35px;left:-120px;position:absolute;text-align:center;width:120px;}
+#sticky-social a:hover span{left:100%;}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span{background:#3b5998;z-index:99999999;}
+.sticky-social-inline a[class*="share_facebook"]{background:#3b5998;color:#fff;padding:5px 10px;margin:5px;}
+.sticky-social-inline a[class*="share_facebook"] span{padding-left:5px;}
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span{background:#00aced;}
+.sticky-social-inline a[class*="share_twitter"]{background:#00aced;color:#fff;padding:5px 10px;margin:5px;}
+.sticky-social-inline a[class*="share_twitter"] span{padding-left:5px;}
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span{background:#dd4b39;}
+.sticky-social-inline a[class*="share_gplus"]{background:#dd4b39;color:#fff;padding:5px 10px;margin:5px;}
+.sticky-social-inline a[class*="share_gplus"] span{padding-left:5px;}
+.sticky-social-inline a[class*="share_friend"]{background:#333;color:#fff;padding:5px 10px;margin:5px;}
+.sticky-social-inline a[class*="share_pinterest"]{background:#cc2127;color:#fff;padding:5px 10px;margin:5px;}
+#sticky-social a[class*="share_friend"] span{background:#333;}
+#sticky-social a[class*="share_friend"]:hover{background:#333;}
+.sticky-social-inline a[class*="share_friend"] span{padding-left:5px;}
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span{background:#007bb6;}
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span{background:#517fa4;}
+#sticky-social a[class*="stumbleupon"],
+#sticky-social a[class*="stumbleupon"]:hover,
+#sticky-social a[class*="stumbleupon"] span{background:#eb4924;}
+#sticky-social a[class*="pinterest"],
+#sticky-social a[class*="pinterest"]:hover,
+#sticky-social a[class*="pinterest"] span{background:#cc2127;}
+#sticky-social a[class*="flickr"],
+#sticky-social a[class*="flickr"]:hover,
+#sticky-social a[class*="flickr"] span{background:#ff0084;}
+#sticky-social a[class*="tumblr"],
+#sticky-social a[class*="tumblr"]:hover,
+#sticky-social a[class*="tumblr"] span{background:#32506d;}
+.friend-modal .modal-header{background:#e30f7a;color:#FFF;}
+.friend-modal .modal-header .close{color:#fff;float:right;font-size:21px;font-weight:700;line-height:1;opacity:1;text-shadow:0 1px 0 #fff;}
+.friend-modal .Modal-body{padding:20px;position:relative;}
+.friend-modal .Modal-body .bg_image{background:rgba(0, 0, 0, 0) url("../images/friend.jpg") repeat scroll 0 0/cover;height:100%;left:-1px;opacity:0.1;position:absolute;top:0;z-index:0;width:100%;}
+.friend-modal .modal-footer{background:#fff;color:#FFF;}
+.friend-modal .modal-footer .btn{background:#e30f7a;color:#FFF;}
+.contentRight .partage_friend{margin:5px;}
+.contentRight .partage_friend img{max-height:30px;width:auto !important;}
+@media all and (max-width:479px){.contentRight a[class*="share_facebook"]{margin:5px 2px 5px 0px !important;}
+.contentRight a[class*="share_twitter"], .contentRight a[class*="share_gplus"], .contentRight a[class*="partage_friend"]{margin:5px 2px 5px 2px !important;}
+}

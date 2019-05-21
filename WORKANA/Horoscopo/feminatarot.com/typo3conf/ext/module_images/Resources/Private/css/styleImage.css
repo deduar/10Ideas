@@ -1,0 +1,43 @@
+/*blocs images accueil*/
+
+.images-home img{
+
+  width:100%;
+  height: auto !important;
+  /*min-height:234px;
+
+  height:234px;*/
+
+}
+
+.images-home .title-img{
+
+  padding:1px;
+
+  background:#f7f7f7;
+
+  text-align:center;
+
+  min-height:75px;
+
+}
+
+.images-home h2{
+
+  font-size:20px;
+
+  color:#151515;
+
+}
+
+.images-home:hover > a > .title-img h2{
+
+  color:#E30F7A;  
+
+}
+
+.images-home:hover{
+
+  box-shadow: 0 0 15px #555;
+
+}

@@ -1,0 +1,42 @@
+equipo ya instalado 4108
+Ip 192.168.102.155
+contrasena 7$eaSVR%
+
+asterisk virtualizado (elastick)
+Contrasena JTNKqXatXe
+IP Interna 172.16.255.248 
+IP Externa 192.168.102.226
+
+GrandStream - 4124 - 
+172.16.98.33
+admin / admin
+
+SW - SIMCard
+ip 172.16.255.99
+admin
+admin
+
+ATA - 172.16.108.49
+admin
+__________________________
+---------------------------
+http://172.16.98.37
+4224 - admin
+
+http://192.168.102.155/
+4108 - 7$eaSVR%
+
+http://172.16.41.113
+386 - admin
+
+https://172.16.255.248
+asterisk - admin - JTNKqXatXe
+root 7&eaSVRh
+mysql -u root -p"JTNKqXatXe"
+use asteriskcdrdb;
+select  * from cdr order by calldate desc limit 20;
+
+
+http://172.16.250.121
+linksys SAP800 - user admin
+

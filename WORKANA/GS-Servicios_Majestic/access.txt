@@ -1,0 +1,16 @@
+Accesos
+
+
+SFTP
+
+Servidor:  kycservices.io
+Usuario: isavqz
+Contraseña: 6NvCqwEb
+Directorio: kycservices.io/contracts
+
+
+MYSQL
+Servidor: mysql.kycservices.io
+Db: kyc_contracts
+Usuario: kycserv
+Contraseña: ppH3Kxqk

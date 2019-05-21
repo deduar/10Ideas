@@ -1,0 +1,29 @@
+Ya he recibido las especificaciones del API. Tendrás que desarrollar 2 APIs (no se trata de solo implementarlas).
+
+Un primer API permite recibir los datos de los usuarios y el secundo API el estado (para saber si tenemos que dar al usuario acceso a nuestro contenido o no). Tenemos que recibir la información y grabarla en una base de datos, para verificar cada vez que tenemos un usuario si tenemos que darle acceso al contenido.
+
+Te mando las especificaciones que deben tener los APIs. El "sistema de contenido" es el website que has desarrollado.
+
+Si tienes algo no está claro con las especificaciones, puedes contactarte con el desarrollador de nuestro socio, Ludwing (lvillalobos@continentint.com). Cuando has desarrollado los API, manda los URL a el también. Por favor, preséntate como el desarrollador del sistema de contenido en el primer correo electrónico que le mandaras.
+
+---------------------------
+
+SI mandas los URL de los API, por favor manda también copías a ggonzalez@continentint.com , Patrick Thomas <pthomas@continentint.com> , jpguet@gmail.com y yo, para notificarnos de que serán listas.
+
+---------------------------
+
+
+El primer API permite recoger los datos de identificación del usuario conseguidos con el formulario de la landing page.
+
+Una vez rellenadoel formulario, el usuario tiene que pagar con su teléfono. No conozco el proceso exacto, pero creo que tiene que mandar un SMS o algo así. El pago es una subscripción. Entonces hay un cobro por día. El segundo API nos permite saber si esos pagos funcionan o si son rechazados.
+
+Si el segundo API resulta falso, hay que poner un mensaje de error. Quizás le llevaremos a la landing page en el futuro pero de momento, solo ponemos el mensaje de eror.
+
+Hay que almanecer los datos del usuario que viene del primer API (necesitaremos estos datos para otras cosas, por ejemplo, para mandar sms personalizados con el nombre del usuario). También, hay que amanecer los datos del segundo API, para dar accesos al contenido.
+
+----------------
+Pero sé que necesitamos el api para dos cosas (y nada más):
+    - verificar que los usuarios han pagado la suscripción al portal,
+    - mantener una base de datos con los datos de los usuarios, usaremos esos datos luego para contactar con los clientes o rellenar formularios con los datos de los clientes automáticamente.
+
+

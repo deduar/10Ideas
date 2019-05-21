@@ -1,0 +1,82 @@
+! function() {
+    var a = function(a, b, c, d) {
+        var e = c || 640,
+            f = d || 320,
+            g = window.screenLeft || window.screenX,
+            h = window.screenTop || window.screenY,
+            i = window.innerWidth || document.documentElement.clientWidth,
+            j = window.innerHeight || document.documentElement.clientHeight,
+            k = g + i / 2 - e / 2,
+            l = h + j / 2 - f / 2,
+            m = window.open(a, b, "scrollbars=yes, width=" + e + ", height=" + f + ", top=" + l + ", left=" + k);
+        return m.focus(), !0
+    };
+    $(".share_twitter").length && document.querySelector(".share_twitter").addEventListener("click", function(b) {
+        b.preventDefault();
+        var c = window.location.href,
+            d = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(document.title) + "&via=feminatarot.com&lang='es'&url=" + encodeURIComponent(c);
+        a(d, "Compartir en Twitter")
+    }), $(".share_facebook").length && document.querySelector(".share_facebook").addEventListener("click", function(b) {
+        b.preventDefault();
+        var c = window.location.href,
+            d = jQuery("meta[property='og:image']").attr("content"),
+            e = "https://es-la.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(c) + "&image=" + d;
+        a(e, "Compartir en facebook")
+    }), $(".share_gplus").length && document.querySelector(".share_gplus").addEventListener("click", function(b) {
+        b.preventDefault();
+        var c = window.location.href,
+            d = "https://plus.google.com/share?hl=es&url=" + encodeURIComponent(c);
+        a(d, "Compartir en Google+")
+    })
+}(), $(function() {
+    var foundin = $('span:contains("[partage_reseau_sociaux]")').parent(),
+        foundinP = $('p:contains("[partage_reseau_sociaux]")'),
+        HTML = "<div class='sticky-social-inline'>";
+    HTML += '<a href="#" class="entypo-facebook share_facebook" data-url="http://feminatarot.com/"><span>Compartir</span></a>',
+    HTML += '<a href="#" class="entypo-twitter share_twitter" data-url="http://feminatarot.com/"><span>Twitter</span></a>',
+    HTML += '<a href="#" class="partage_friend" data-toggle="modal" data-target=".friend-modal" title="Enviar un email"><img src="fileadmin/templates/images/footer/feminastro_friends.png"></a>',
+    HTML += "</div>", foundin.html(HTML), foundinP.html(HTML), $(".share_facebook").on("click", function(a) {
+        a.preventDefault();
+        var b = window.location.href,
+            c = jQuery("meta[property='og:image']").attr("content"),
+            d = "https://es-la.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(b) + "&image=" + c;
+        popupCenter(d, "Compartir en facebook")
+    }), $(".share_twitter").on("click", function(a) {
+        a.preventDefault();
+        var b = window.location.href,
+            c = "https://twitter.com/intent/tweet?lang=es&text=" + encodeURIComponent(document.title) + "&via=feminatarot.com&url=" + encodeURIComponent(b);
+        popupCenter(c, "Compartir en Twitter")
+    }), $(".share_gplus").on("click", function(a) {
+        a.preventDefault();
+        var b = window.location.href,
+            c = "https://plus.google.com/share?hl=es&url=" + encodeURIComponent(b);
+        popupCenter(c, "Compartir en Google+")
+    }), $(".friend-modal-btn-error").on("click", function(a) {
+        a.preventDefault(), $(".friend-error").html(""), $(".friend-modal-btn-error").hide(), $(".friend-modal-btn-submit").show(), $(".form-friend").show()
+    }), $(".friend-modal-btn-submit").on("click", function(e) {
+        e.preventDefault();
+        var form = $(".form-friend"),
+            url = window.location.href;
+        $("#form_friend_url").val(url), jQuery.ajax({
+            method: "POST",
+            dataType: "html",
+            url: "/index.php?eID=registerInvit",
+            data: form.serialize(),
+            success: function(data) {
+                eval(data)
+            }
+        })
+    });
+    var popupCenter = function(a, b, c, d) {
+        var e = c || 640,
+            f = d || 320,
+            g = window.screenLeft || window.screenX,
+            h = window.screenTop || window.screenY,
+            i = window.innerWidth || document.documentElement.clientWidth,
+            j = window.innerHeight || document.documentElement.clientHeight,
+            k = g + i / 2 - e / 2,
+            l = h + j / 2 - f / 2,
+            m = window.open(a, b, "scrollbars=yes, width=" + e + ", height=" + f + ", top=" + l + ", left=" + k);
+        return m.focus(), !0
+    }
+});
